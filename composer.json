@@ -1,0 +1,11 @@
+{
+    "require": {
+        "chrisboulton/php-resque": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "MessageQueue\\": "./src",
+            "MessageQueue\\Service\\": ["./src/Service", "./services"]
+        }
+    }
+}
