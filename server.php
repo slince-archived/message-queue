@@ -14,11 +14,11 @@ function shutdownCallback($errno, $errstr, $errfile = '', $errline = '')
     file_put_contents(__DIR__ . '/shutdown.lock', $message);
     $mailService = new SendEmail();
     $mailService->perform(array(
-        'to' => 'taosikai@dotfashion.cn',
+        'to' => 'xxxxx',
         'subject' => '脚本异常结束',
         'content' => $message,
         'fromName' => 'Job Service',
-        'from' => 'taosikai@dotfashion.cn',
+        'from' => 'xxxxx',
     ));
 }
 //服务端配置
